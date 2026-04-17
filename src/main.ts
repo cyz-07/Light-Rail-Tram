@@ -42,7 +42,7 @@ if (!api) {
         },
       });
 
-      window.SubwayBuilderAPI.trains.registerTrainType({
+      api.trains.registerTrainType({
         id: 'light-rail',
         name: 'Light Rail',
         description: 'Modern light rail for urban transit',
