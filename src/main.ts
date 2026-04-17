@@ -29,21 +29,21 @@ if (!api) {
       api.trains.registerTrainType({
           id: 'light-rail',
           name: 'Light Rail',
-          description: 'Modern light rail for urban transit',
+          description: "Trams with right of way. Modeled after Sydney Light Rail's Alstom Citadis 305.",
           stats: {
-              maxAcceleration: 1.2,
-              maxDeceleration: 1.3,
-              maxSpeed: 25,
+              maxAcceleration: 1.3,
+              maxDeceleration: 1.2,
+              maxSpeed: 22.2, // 80kmph
               maxSpeedLocalStation: 12,
-              capacityPerCar: 80,
-              carLength: 20,
+              capacityPerCar: 225,
+              carLength: 33.5,
               minCars: 1,
-              maxCars: 4,
+              maxCars: 2,
               carsPerCarSet: 1,
-              carCost: 1_500_000,
+              carCost: 1_000_000,
               trainWidth: 2.65,
-              minStationLength: 50,
-              maxStationLength: 100,
+              minStationLength: 33.5,
+              maxStationLength: 67,
               baseTrackCost: 20_000,
               baseStationCost: 15_000_000,
               trainOperationalCostPerHour: 200,
@@ -53,12 +53,7 @@ if (!api) {
           compatibleTrackTypes: ['light-rail'],
           appearance: {
               color: '#ff0000'
-          },
-          elevationMultipliers: {
-              AT_GRADE: 0.7,
-              ELEVATED: 1.5
-          },
-          allowAtGradeRoadCrossing: true
+          }
       });
 
       console.log(`${TAG} Initialized successfully.`);
