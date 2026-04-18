@@ -27,30 +27,46 @@ if (!api) {
       api.trains.registerTrainType({
           id: 'tram',
           name: 'Tram',
-          description: "Trams. Modeled after Melbourne's Alstom Citadis 305.",
+          description: "Trams on roads. Modeled after Melbourne's E-Class trams",
           stats: {
               maxAcceleration: 1.3,
               maxDeceleration: 1.2,
-              maxSpeed: 22.2, // 80kmph
-              maxSpeedLocalStation: 12,
-              capacityPerCar: 225,
+              maxSpeed: 4.4, // 16kmph, slow due to mixed traffic
+              maxSpeedLocalStation: 4.4,
+              capacityPerCar: 214,
               carLength: 33.5,
               minCars: 1,
-              maxCars: 2,
+              maxCars: 1,
               carsPerCarSet: 1,
-              carCost: 1_000_000,
+              carCost: 1_500_000,
               trainWidth: 2.65,
               minStationLength: 33.5,
-              maxStationLength: 67,
+              maxStationLength: 33.5,
               baseTrackCost: 20_000,
               baseStationCost: 15_000_000,
               trainOperationalCostPerHour: 200,
               carOperationalCostPerHour: 30,
-              scissorsCrossoverCost: 5_000_000
+              scissorsCrossoverCost: 5_000_000,
+              stopTimeSeconds: 10,
+              maxLateralAcceleration: 2,
+              parallelTrackSpacing: 2.5,
+              trackClearance: 2,
+              maxSlopePercentage: 5.25,
+              minTurnRadius: 18,
+              minStationTurnRadius: 25,
+              trackMaintenanceCostPerMeter: 175,
+              stationMaintenanceCostPerYear: 60_000
           },
           compatibleTrackTypes: ['light-rail', 'tram'],
+          allowAtGradeRoadCrossing: true,
           appearance: {
               color: '#04ff00'
+          },
+          elevationMultipliers: {
+                STANDARD_TUNNEL: 100,
+                DEEP_BORE: 100, // should only be built at-grade, switch to light rail if not
+                ELEVATED: 100,
+                CUT_AND_COVER: 100
           }
       });
 
@@ -62,31 +78,31 @@ if (!api) {
           stats: {
               maxAcceleration: 1.3,
               maxDeceleration: 1.2,
-              maxSpeed: 22.2, // 80kmph
+              maxSpeed: 19.4, // 70kmph
               maxSpeedLocalStation: 12,
               capacityPerCar: 225,
               carLength: 33.5,
               minCars: 1,
               maxCars: 2,
               carsPerCarSet: 1,
-              carCost: 1_000_000,
+              carCost: 1_500_000,
               trainWidth: 2.65,
               minStationLength: 33.5,
               maxStationLength: 67,
-              baseTrackCost: 20_000,
+              baseTrackCost: 40_000,
               baseStationCost: 15_000_000,
               trainOperationalCostPerHour: 200,
               carOperationalCostPerHour: 30,
               scissorsCrossoverCost: 5_000_000,
               stopTimeSeconds: 10,
-              maxLateralAcceleration: 1.2,
-              parallelTrackSpacing: 3.8,
+              maxLateralAcceleration: 2,
+              parallelTrackSpacing: 2.5,
               trackClearance: 2,
-              maxSlopePercentage: 4.25,
-              minTurnRadius: 50,
-              minStationTurnRadius: 80,
-              trackMaintenanceCostPerMeter: 330,
-              stationMaintenanceCostPerYear: 275_000
+              maxSlopePercentage: 5.25,
+              minTurnRadius: 18,
+              minStationTurnRadius: 25,
+              trackMaintenanceCostPerMeter: 175,
+              stationMaintenanceCostPerYear: 60_000
           },
           compatibleTrackTypes: ['light-rail', 'tram'],
           appearance: {
