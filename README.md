@@ -7,7 +7,7 @@
 
 -Lower capacity compared to light rail (1 car only and 214 passangers), but also lower costs
 
--Should only be built at-grade (non at-grade costs are x100, switch to light rail to build not at-grade)
+-Should only be built at-grade (non at-grade costs are x10, switch to light rail to build not at-grade)
 
 ## Light Rail
 **Features:**
