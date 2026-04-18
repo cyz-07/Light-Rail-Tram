@@ -63,10 +63,10 @@ if (!api) {
               color: '#04ff00'
           },
           elevationMultipliers: {
-                STANDARD_TUNNEL: 100,
-                DEEP_BORE: 100, // should only be built at-grade, switch to light rail if not
-                ELEVATED: 100,
-                CUT_AND_COVER: 100
+                STANDARD_TUNNEL: 100.0,
+                DEEP_BORE: 100.0, // should only be built at-grade, switch to light rail if not
+                ELEVATED: 100.0,
+                CUT_AND_COVER: 100.0
           }
       });
 
