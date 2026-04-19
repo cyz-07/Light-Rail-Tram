@@ -41,7 +41,7 @@ if (!api) {
               carCost: 1_500_000,
               trainWidth: 2.65,
               minStationLength: 33.5,
-              maxStationLength: 33.5,
+              maxStationLength: 34,
               baseTrackCost: 20_000,
               baseStationCost: 15_000_000,
               trainOperationalCostPerHour: 200,
@@ -54,7 +54,7 @@ if (!api) {
               maxSlopePercentage: 5.25,
               minTurnRadius: 18,
               minStationTurnRadius: 25,
-              trackMaintenanceCostPerMeter: 175,
+              trackMaintenanceCostPerMeter: 150,
               stationMaintenanceCostPerYear: 60_000
           },
           compatibleTrackTypes: ['light-rail', 'tram'],
@@ -63,10 +63,10 @@ if (!api) {
               color: '#04ff00'
           },
           elevationMultipliers: {
-              STANDARD_TUNNEL: 1000, 
-              DEEP_BORE: 1000, // should only be built at-grade, switch to light rail if not
-              ELEVATED: 1000,
-              CUT_AND_COVER: 1000
+              STANDARD_TUNNEL: 1_000_000, 
+              DEEP_BORE: 1_000_000, // should only be built at-grade, switch to light rail if not
+              ELEVATED: 1_000_000,
+              CUT_AND_COVER: 1_000_000
           }
       });
 
@@ -101,7 +101,7 @@ if (!api) {
               maxSlopePercentage: 5.25,
               minTurnRadius: 18,
               minStationTurnRadius: 25,
-              trackMaintenanceCostPerMeter: 250,
+              trackMaintenanceCostPerMeter: 300,
               stationMaintenanceCostPerYear: 120_000
           },
           compatibleTrackTypes: ['light-rail', 'tram'],
