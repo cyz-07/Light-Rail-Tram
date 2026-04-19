@@ -10,6 +10,7 @@
 -Way cheaper compared to light rail (half the cost)
 
 -Should only be built at-grade (non at-grade costs are x1mil, switch to light rail to build not at-grade)
+
 -(elevation cost multipliers seems to be broken atm, so :c)
 
 ## Light Rail
@@ -23,4 +24,5 @@
 **Features:**
 
 -Both are able to use each others track interchangeably (planned, not avaliable yet)
+
 -(i dont even know if its possible or hard coded)
