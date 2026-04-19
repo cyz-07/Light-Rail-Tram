@@ -14,9 +14,9 @@
 
 -Completely seperated from traffic with its own right of way, thus faster (70 km/h)
 
--igher costs comapred to trams but higher capacity (225 passangers) and has the ability to have 2 cars
+-Higher costs comapred to trams but higher capacity (225 passangers) and has the ability to have 2 cars
 
 ## Both
 **Features:**
 
--Both are able to use each others track interchangeably
+-Both are able to use each others track interchangeably (planned, not avaliable yet)

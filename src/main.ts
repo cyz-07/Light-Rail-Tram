@@ -90,10 +90,10 @@ if (!api) {
               minStationLength: 33.5,
               maxStationLength: 67,
               baseTrackCost: 40_000,
-              baseStationCost: 15_000_000,
-              trainOperationalCostPerHour: 200,
-              carOperationalCostPerHour: 30,
-              scissorsCrossoverCost: 5_000_000,
+              baseStationCost: 30_000_000,
+              trainOperationalCostPerHour: 400,
+              carOperationalCostPerHour: 60,
+              scissorsCrossoverCost: 10_000_000,
               stopTimeSeconds: 10,
               maxLateralAcceleration: 2,
               parallelTrackSpacing: 2.5,
@@ -101,8 +101,8 @@ if (!api) {
               maxSlopePercentage: 5.25,
               minTurnRadius: 18,
               minStationTurnRadius: 25,
-              trackMaintenanceCostPerMeter: 175,
-              stationMaintenanceCostPerYear: 60_000
+              trackMaintenanceCostPerMeter: 250,
+              stationMaintenanceCostPerYear: 120_000
           },
           compatibleTrackTypes: ['light-rail', 'tram'],
           appearance: {
